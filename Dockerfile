@@ -1,10 +1,5 @@
 FROM ryankurte/docker-arm-embedded
 
-RUN apk add --no-cache \
-		ca-certificates \
-		curl \
-		openssl
-
 ENV DOCKER_BUCKET get.docker.com
 ENV DOCKER_VERSION 1.13.0
 ENV DOCKER_SHA256 fc194bb95640b1396283e5b23b5ff9d1b69a5e418b5b3d774f303a7642162ad6
