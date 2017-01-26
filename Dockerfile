@@ -1,4 +1,4 @@
-FROM alpine:3.5
+FROM ryankurte/docker-arm-embedded
 
 RUN apk add --no-cache \
 		ca-certificates \
@@ -18,7 +18,3 @@ RUN set -x \
 	&& rm docker.tgz \
 	&& docker -v
 
-COPY docker-entrypoint.sh /usr/local/bin/
-
-ENTRYPOINT ["docker-entrypoint.sh"]
-CMD ["sh"]
